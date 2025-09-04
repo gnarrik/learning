@@ -3,27 +3,27 @@
 } */
 
 @font-face {
-  font-family: "Jost";
-  src: url("./fonts/Jost-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Jost';
+	src: url('./fonts/Jost-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Jost";
-  src: url("./fonts/Jost-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Jost';
+	src: url('./fonts/Jost-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "Jost";
-  src: url("./fonts/Jost-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Jost';
+	src: url('./fonts/Jost-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 /**
@@ -32,7 +32,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /**
@@ -40,7 +40,7 @@
   у которых есть атрибут class
  */
 :where(ul, ol):where([class]) {
-  padding-left: 0;
+	padding-left: 0;
 }
 
 /**
@@ -49,7 +49,7 @@
  */
 body,
 :where(blockquote, figure):where([class]) {
-  margin: 0;
+	margin: 0;
 }
 
 /**
@@ -57,11 +57,11 @@ body,
   у которых есть атрибут class
  */
 :where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
-  margin-block: 0;
+	margin-block: 0;
 }
 
 :where(dd[class]) {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 /**
@@ -69,15 +69,15 @@ body,
   у которого есть атрибут class
  */
 :where(ul[class]) {
-  list-style: none;
+	list-style: none;
 }
 
 /**
   Упрощаем работу с изображениями
  */
 img {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 /**
@@ -87,679 +87,679 @@ input,
 textarea,
 select,
 button {
-  font: inherit;
+	font: inherit;
 }
 
 html {
-  /**
+	/**
     Пригодится в большинстве ситуаций
     (когда, например, нужно будет "прижать" футер к низу сайта)
    */
-  height: 100%;
-  /**
+	height: 100%;
+	/**
     Плавный скролл
    */
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  /**
+	/**
     Пригодится в большинстве ситуаций
     (когда, например, нужно будет "прижать" футер к низу сайта)
    */
-  min-height: 100%;
-  /**
+	min-height: 100%;
+	/**
     Унифицированный интерлиньяж
    */
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 :root {
-  /* Задаем цвета */
-  --color-dark: #141024;
-  --color-light: #ffffff;
-  --color-light-alternate: #f9f9f9;
-  --color-red: #d52027;
-  --color-gray: #808080;
-  --color-light-gray: rgba(20, 16, 36, 0.7);
+	/* Задаем цвета */
+	--color-dark: #141024;
+	--color-light: #ffffff;
+	--color-light-alternate: #f9f9f9;
+	--color-red: #d52027;
+	--color-gray: #808080;
+	--color-light-gray: rgba(20, 16, 36, 0.7);
 
-  /* Задаем значение вертикальных отступов сверху и снизу для секции */
-  --section-padding-block: 150px;
+	/* Задаем значение вертикальных отступов сверху и снизу для секции */
+	--section-padding-block: 150px;
 
-  /* Задаем основные шрифты */
-  --font-family-base: "Jost", sans-serif;
+	/* Задаем основные шрифты */
+	--font-family-base: 'Jost', sans-serif;
 
-  /* Задаем параметры контейнера */
-  --container-width: 1300px;
-  --container-padding-x: 15px;
+	/* Задаем параметры контейнера */
+	--container-width: 1300px;
+	--container-padding-x: 15px;
 
-  --transition-duration: 0.2s;
+	--transition-duration: 0.2s;
 
-  --border-radius: 5px;
+	--border-radius: 5px;
 
-  --button-width: 260px;
-  --button-height: 79px;
+	--button-width: 260px;
+	--button-height: 79px;
 }
 
 body {
-  font-family: var(--font-family-base);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--color-light);
-  background-color: var(--color-dark);
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.75;
+	color: var(--color-light);
+	background-color: var(--color-dark);
 }
 
 header {
-  display: flex;
-  background-color: var(--color-dark);
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-inline: 30px;
-  min-height: 10vh;
+	display: flex;
+	background-color: var(--color-dark);
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-inline: 30px;
+	min-height: 10vh;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .button {
-  width: var(--button-width);
-  height: var(--button-height);
-  background-color: var(--color-red);
-  border-radius: var(--border-radius);
-  border: none;
-  color: var(--color-light);
-  font-size: 18;
-  font-weight: 400;
+	width: var(--button-width);
+	height: var(--button-height);
+	background-color: var(--color-red);
+	border-radius: var(--border-radius);
+	border: none;
+	color: var(--color-light);
+	font-size: 18;
+	font-weight: 400;
 }
 
 .button:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 
 .button:active {
-  transform: scale(0.98);
+	transform: scale(0.98);
 }
 
 .visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  clip-path: inset(100%) !important;
-  clip: rect(0 0 0 0) !important;
-  overflow: hidden !important;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
 }
 
 .container {
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-inline: var(--container-padding-x);
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-x);
 }
 
 .logo {
-  text-transform: uppercase;
-  font-size: 30px;
-  text-decoration: none;
-  color: var(--color-light);
-  font-weight: 700;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-decoration: none;
+	color: var(--color-light);
+	font-weight: 700;
 }
 
 .logo:hover,
 .phone-number:hover,
 .header-menu-link:hover {
-  color: var(--color-gray);
+	color: var(--color-gray);
 }
 
 .logo:active,
 .phone-number:active {
-  scale: 0.98;
+	scale: 0.98;
 }
 
 .header-menu {
-  padding-top: 7px;
+	padding-top: 7px;
 }
 
 .header-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
 }
 
 .header-menu-link {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--color-light);
-  text-wrap: nowrap;
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--color-light);
+	text-wrap: nowrap;
 }
 
 .header-menu-link:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 10px;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 10px;
 }
 
 .phone-number {
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--color-light);
-  text-wrap: nowrap;
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--color-light);
+	text-wrap: nowrap;
 }
 
 .promo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
 }
 
 .promo-info {
-  max-width: 516px;
+	max-width: 516px;
 }
 
 .promo-info-term {
-  font-size: 70px;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-size: 70px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .promo-info-definition {
-  max-width: 478px;
-  font-size: 20px;
-  font-weight: 400;
+	max-width: 478px;
+	font-size: 20px;
+	font-weight: 400;
 }
 .promo-info-button {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 
 .promo-image {
-  position: relative;
-  width: clamp(180px, 48vw, 516px);
-  height: auto;
-  margin: 0 auto;
+	position: relative;
+	width: clamp(180px, 40vw, 516px);
+	height: auto;
+	margin: 0 auto;
 }
 
 .promo-image-circle {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-  width: clamp(273px, 60vw, 783px);
-  max-width: 100%;
-  aspect-ratio: 1;
+	width: clamp(273px, 60vw, 783px);
+	max-width: 100%;
+	aspect-ratio: 1;
 
-  border: min(5vw, 80px) solid #ffffff;
-  border-radius: 50%;
+	border: min(5vw, 80px) solid #ffffff;
+	border-radius: 50%;
 }
 
 .about-school {
-  background-color: var(--color-light);
-  color: black;
-  padding-block: var(--section-padding-block);
+	background-color: var(--color-light);
+	color: black;
+	padding-block: var(--section-padding-block);
 }
 
 .about-school-text {
-  font-size: 30px;
+	font-size: 30px;
 }
 p.text {
-  max-width: 891px;
+	max-width: 891px;
 }
 
 .about-school-achievements-list {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
 }
 .about-school-achievements-item {
-  max-width: 280px;
+	max-width: 280px;
 }
 .about-school-achievements-term {
-  font-size: 70px;
-  font-weight: 600;
-  color: var(--color-red);
+	font-size: 70px;
+	font-weight: 600;
+	color: var(--color-red);
 }
 .about-school-achievements-definition {
-  font-size: 18px;
-  color: var(--color-light-gray);
+	font-size: 18px;
+	color: var(--color-light-gray);
 }
 
 .about-profit {
-  background-color: var(--color-light-alternate);
-  color: #000;
-  padding-block: 50px;
+	background-color: var(--color-light-alternate);
+	color: #000;
+	padding-block: 50px;
 }
 .about-profit-title {
-  font-size: 50px;
-  font-weight: 600;
+	font-size: 50px;
+	font-weight: 600;
 }
 .about-profit-list {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
 }
 
 .about-profit-item {
-  max-width: 360px;
+	max-width: 360px;
 }
 .about-profit-term {
-  font-size: 24px;
-  font-weight: 600;
+	font-size: 24px;
+	font-weight: 600;
 }
 .about-profit-definition {
-  font-size: 18px;
-  color: var(--color-light-gray);
-  padding-top: 20px;
+	font-size: 18px;
+	color: var(--color-light-gray);
+	padding-top: 20px;
 }
 .about-profit-term.remark::after {
-  content: "";
-  display: inline-block; /* или block, в зависимости от контекста */
-  position: absolute;
-  width: 24px;
-  aspect-ratio: 1;
-  background-color: rgba(20, 16, 36, 0.08);
-  border-radius: 50%;
-  transform: translate(20%, -20%);
+	content: '';
+	display: inline-block; /* или block, в зависимости от контекста */
+	position: absolute;
+	width: 24px;
+	aspect-ratio: 1;
+	background-color: rgba(20, 16, 36, 0.08);
+	border-radius: 50%;
+	transform: translate(20%, -20%);
 }
 
 .coaches {
-  background-color: var(--color-light);
-  color: #000;
-  padding-block: 100px;
+	background-color: var(--color-light);
+	color: #000;
+	padding-block: 100px;
 }
 
 .coaches-title {
-  font-size: 50px;
-  font-weight: 600;
-  padding-bottom: 50px;
+	font-size: 50px;
+	font-weight: 600;
+	padding-bottom: 50px;
 }
 .coaches-list {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .coaches-term-text {
-  font-size: 24px;
-  font-weight: 600;
-  padding-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	padding-top: 20px;
 }
 
 .price {
-  background-color: var(--color-light);
-  color: #000;
-  padding-block: 50px;
+	background-color: var(--color-light);
+	color: #000;
+	padding-block: 50px;
 }
 .price-title {
-  font-size: 50px;
-  font-weight: 600;
-  padding-bottom: 50px;
+	font-size: 50px;
+	font-weight: 600;
+	padding-bottom: 50px;
 }
 .price-list {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .price-item {
-  width: 360px;
-  height: 500px;
-  background-color: var(--color-light);
-  border: 1px solid rgba(20, 16, 36, 0.2);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 0.2s;
+	width: 360px;
+	height: 500px;
+	background-color: var(--color-light);
+	border: 1px solid rgba(20, 16, 36, 0.2);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.2s;
 }
 
 .price-item:hover {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  scale: 1.1;
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	scale: 1.1;
 }
 .price-item-name {
-  font-size: 30px;
-  font-weight: 600;
+	font-size: 30px;
+	font-weight: 600;
 }
 .price-list-inner {
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 80px;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 80px;
 }
 .price-inner-term {
-  font-size: 50px;
-  font-weight: 600;
+	font-size: 50px;
+	font-weight: 600;
 }
 .price-inner-definition {
-  width: 250px;
+	width: 250px;
 }
 
 .register {
-  background-color: var(--color-red);
-  padding-block: 50px;
-  position: relative;
+	background-color: var(--color-red);
+	padding-block: 50px;
+	position: relative;
 }
 .registration {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .registration-info {
-  width: 400px;
+	width: 400px;
 }
 .registration-info-title {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.6;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 1.6;
 }
 .registration-info-text {
-  font-size: 20px;
-  padding-top: 20px;
+	font-size: 20px;
+	padding-top: 20px;
 }
 
 .registration-form-item {
-  padding-left: 20px;
-  border-radius: var(--border-radius);
-  border: none;
+	padding-left: 20px;
+	border-radius: var(--border-radius);
+	border: none;
 }
 
 .registration-form-item,
 .registration-form-button {
-  display: block;
-  padding-block: 10px;
-  width: 500px;
-  height: 64px;
-  margin-block: 10px;
+	display: block;
+	padding-block: 10px;
+	width: 500px;
+	height: 64px;
+	margin-block: 10px;
 }
 .registration-form-button {
-  background-color: var(--color-dark);
+	background-color: var(--color-dark);
 }
 
 footer {
-  padding-block: 30px;
-  padding-inline: 30px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
+	padding-block: 30px;
+	padding-inline: 30px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  width: 95vw;
+	display: flex;
+	justify-content: space-between;
+	width: 95vw;
 }
 
 /* Медиа-запросы для адаптации */
 @media (max-width: 1200px) {
-  .promo-info-term {
-    font-size: 60px;
-  }
+	.promo-info-term {
+		font-size: 60px;
+	}
 
-  .about-school-achievements-item {
-    max-width: 220px;
-  }
+	.about-school-achievements-item {
+		max-width: 220px;
+	}
 
-  .about-school-achievements-term {
-    font-size: 50px;
-  }
+	.about-school-achievements-term {
+		font-size: 50px;
+	}
 
-  .coaches-term img {
-    width: 300px;
-  }
+	.coaches-term img {
+		width: 300px;
+	}
 
-  .price-item {
-    width: 300px;
-    height: 450px;
-  }
+	.price-item {
+		width: 300px;
+		height: 450px;
+	}
 }
 
 @media (max-width: 992px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-  }
+	header {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		padding-bottom: 20px;
+	}
 
-  .promo {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
-  }
+	.promo {
+		flex-direction: column;
+		text-align: center;
+		margin-top: 30px;
+	}
 
-  .promo-info {
-    margin-bottom: 50px;
-  }
+	.promo-info {
+		margin-bottom: 50px;
+	}
 
-  .promo-info-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.promo-info-button {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  .about-school-achievements-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+	.about-school-achievements-list {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
 
-  .about-profit-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  .about-profit-title {
-    text-align: center;
-    padding-inline: 0;
-    margin-inline: 0;
-  }
+	.about-profit-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+	.about-profit-title {
+		text-align: center;
+		padding-inline: 0;
+		margin-inline: 0;
+	}
 
-  .about-profit-item {
-    max-width: 100%;
-    text-align: center;
-  }
+	.about-profit-item {
+		max-width: 100%;
+		text-align: center;
+	}
 
-  .coaches-title {
-    text-align: center;
-  }
+	.coaches-title {
+		text-align: center;
+	}
 
-  .coaches-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
+	.coaches-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
 
-  .coaches-item {
-    text-align: center;
-  }
+	.coaches-item {
+		text-align: center;
+	}
 
-  .price-title {
-    text-align: center;
-  }
+	.price-title {
+		text-align: center;
+	}
 
-  .price-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
+	.price-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
 
-  .price-item {
-    width: 360px;
-  }
+	.price-item {
+		width: 360px;
+	}
 
-  .registration {
-    flex-direction: column;
-    gap: 30px;
-  }
+	.registration {
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .registration-info {
-    text-align: center;
-    width: 100%;
-  }
+	.registration-info {
+		text-align: center;
+		width: 100%;
+	}
 }
 
 @media (max-width: 768px) {
-  .header-menu-list {
-    column-gap: 20px;
-  }
+	.header-menu-list {
+		column-gap: 20px;
+	}
 
-  .phone-number {
-    font-size: 24px;
-  }
+	.phone-number {
+		font-size: 24px;
+	}
 
-  .promo-info-term {
-    font-size: 50px;
-  }
+	.promo-info-term {
+		font-size: 50px;
+	}
 
-  .promo-info-definition {
-    font-size: 18px;
-  }
+	.promo-info-definition {
+		font-size: 18px;
+	}
 
-  .promo-image {
-    width: 70%;
-  }
+	.promo-image {
+		width: 70%;
+	}
 
-  .promo-image-circle {
-    border-width: min(4vw, 60px);
-  }
+	.promo-image-circle {
+		border-width: min(4vw, 60px);
+	}
 
-  .about-school-text {
-    font-size: 24px;
-  }
+	.about-school-text {
+		font-size: 24px;
+	}
 
-  .about-profit-title,
-  .coaches-title,
-  .price-title {
-    font-size: 40px;
-  }
+	.about-profit-title,
+	.coaches-title,
+	.price-title {
+		font-size: 40px;
+	}
 
-  .registration-info-title {
-    font-size: 30px;
-  }
+	.registration-info-title {
+		font-size: 30px;
+	}
 
-  .registration-form-item,
-  .registration-form-button {
-    width: 60vw;
-  }
+	.registration-form-item,
+	.registration-form-button {
+		width: 60vw;
+	}
 }
 
 @media (max-width: 576px) {
-  .header-menu-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+	.header-menu-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
 
-  .logo {
-    font-size: 24px;
-  }
+	.logo {
+		font-size: 24px;
+	}
 
-  .phone-number {
-    font-size: 20px;
-  }
+	.phone-number {
+		font-size: 20px;
+	}
 
-  .promo-info-term {
-    font-size: 36px;
-  }
+	.promo-info-term {
+		font-size: 36px;
+	}
 
-  .promo-info-definition {
-    font-size: 16px;
-  }
+	.promo-info-definition {
+		font-size: 16px;
+	}
 
-  .promo-image {
-    width: 60%;
-  }
-  .promo-image-circle {
-    width: clamp(200px, 80vw, 500px);
-    border-width: min(3vw, 40px);
-  }
+	.promo-image {
+		width: 60%;
+	}
+	.promo-image-circle {
+		width: clamp(200px, 80vw, 500px);
+		border-width: min(3vw, 40px);
+	}
 
-  .promo-image-female {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1; /* Помещаем над кольцом */
-  }
+	.promo-image-female {
+		width: 100%;
+		height: auto;
+		position: relative;
+		z-index: 1; /* Помещаем над кольцом */
+	}
 
-  .promo-image-circle {
-    width: clamp(200px, 80vw, 400px);
-    border-width: min(3vw, 40px);
-  }
+	.promo-image-circle {
+		width: clamp(200px, 80vw, 400px);
+		border-width: min(3vw, 40px);
+	}
 
-  .button {
-    width: 220px;
-    height: 60px;
-    font-size: 16px;
-  }
+	.button {
+		width: 220px;
+		height: 60px;
+		font-size: 16px;
+	}
 
-  .promo-image-circle {
-    border-width: 40px;
-  }
+	.promo-image-circle {
+		border-width: 40px;
+	}
 
-  .about-school-text {
-    font-size: 20px;
-  }
+	.about-school-text {
+		font-size: 20px;
+	}
 
-  .about-school-achievements-term {
-    font-size: 40px;
-  }
+	.about-school-achievements-term {
+		font-size: 40px;
+	}
 
-  .about-profit-title,
-  .coaches-title,
-  .price-title {
-    font-size: 32px;
-    text-align: center;
-  }
+	.about-profit-title,
+	.coaches-title,
+	.price-title {
+		font-size: 32px;
+		text-align: center;
+	}
 
-  .price-item {
-    width: 280px;
-    height: 400px;
-  }
+	.price-item {
+		width: 280px;
+		height: 400px;
+	}
 
-  .price-inner-term {
-    font-size: 40px;
-  }
+	.price-inner-term {
+		font-size: 40px;
+	}
 
-  .registration-info-title {
-    font-size: 26px;
-  }
+	.registration-info-title {
+		font-size: 26px;
+	}
 
-  .registration-form-button,
-  .registration-form-item {
-    width: 60vw;
-  }
+	.registration-form-button,
+	.registration-form-item {
+		width: 60vw;
+	}
 
-  .registration-info-text {
-    font-size: 18px;
-  }
+	.registration-info-text {
+		font-size: 18px;
+	}
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 20px;
+	}
 }
 
 /* Дополнительные адаптивные стили */
 @media (max-width: 400px) {
-  .promo-info-term {
-    font-size: 30px;
-  }
+	.promo-info-term {
+		font-size: 30px;
+	}
 
-  .about-school-text {
-    font-size: 18px;
-  }
+	.about-school-text {
+		font-size: 18px;
+	}
 
-  .about-profit-title,
-  .coaches-title,
-  .price-title {
-    font-size: 28px;
-  }
+	.about-profit-title,
+	.coaches-title,
+	.price-title {
+		font-size: 28px;
+	}
 
-  .price-item {
-    width: 260px;
-  }
+	.price-item {
+		width: 260px;
+	}
 }
