@@ -32,7 +32,7 @@
                         <dt class="promo-info-term">Robo School</dt>
                         <dd class="promo-info-definition">Курсы повышения квалификации по робототехнике для педагогов начальной школы</dd>
                     </dl>
-                    <button type="button" class="promo-info-button button">Записаться на курс</button>
+                    <button type="button" class="promo-info-button button open-modal-button">Записаться на курс</button>
                 </div>
                 <div class="promo-image">
                     <img src="./images/female with a student book.png" alt="female with a student book" class="promo-image-female">
@@ -149,9 +149,9 @@
                         <div class="price-item-name">– PRO –</div>
                         <dl class="price-list-inner">
                             <dt class="price-inner-term">20.000 &#8381;</dt>
-                            <dd class="price-inner-definition">УМК по робототехнике и программированию</dd>
+                            <dd class="price-inner-definition">Полный УМК</dd>
                         </dl>
-                        <button type="button" class="price-button button">Оставить заявку</button>
+                        <button type="button" class="price-button button open-modal-button">Оставить заявку</button>
                     </li>
                     <li class="price-item">
                         <div class="price-item-name">– ROBO –</div>
@@ -159,15 +159,15 @@
                             <dt class="price-inner-term">15.000 &#8381;</dt>
                             <dd class="price-inner-definition">УМК по робототехнике</dd>
                         </dl>
-                        <button type="button" class="price-button button">Оставить заявку</button>
+                        <button type="button" class="price-button button open-modal-button">Оставить заявку</button>
                     </li>
                     <li class="price-item">
                         <div class="price-item-name">– PROG –</div>
                         <dl class="price-list-inner">
-                            <dt class="price-inner-term">10.000 &#8381</dt>
+                            <dt class="price-inner-term">10.000 &#8381;</dt>
                             <dd class="price-inner-definition">УМК по программированию</dd>
                         </dl>
-                        <button type="button" class="price-button button">Оставить заявку</button>
+                        <button type="button" class="price-button button open-modal-button">Оставить заявку</button>
                     </li>
                 </ul>
             </div>
@@ -185,13 +185,14 @@
                 <div class="registration-form">
                     <form action="" class="">
                         <input type="text" placeholder="Имя" class="registration-form-item">
-                        <input type="tel" placeholder="Телефон" class="registration-form-item">
+                        <input type="tel" placeholder="Телефон" class="registration-form-item" id='registration-phone'>
                         <input type="email" placeholder="E-mail" class="registration-form-item">
                         <button type="submit" class="registration-form-button button">Оформить заявку</button>
                     </form>
                 </div>
             </div>
         </section>
+       
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -203,6 +204,22 @@
                 <a href="tel:+78000001122" class="phone-number">+7 800 000 11 22</a>
             </div>
         </div>
+         <div class="modal-container">
+            <div class="modal-window">
+                    <span class='close-modal'>&times;</span>
+                <h3>Присоединяйтесь к нам!</h3>
+                <form>
+                    <input type="text" placeholder="Имя" class="registration-form-item">
+                    <input type="tel" placeholder="Телефон" class="registration-form-item">
+                    <input type="email" placeholder="E-mail" class="registration-form-item">
+                    <button type="submit" class="registration-form-button button registration-phone">Оформить заявку</button>
+                </form>
+            </div>
+        </div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js" integrity="sha512-+3RJc0aLDkj0plGNnrqlTwCCyMmDCV1fSYqXw4m+OczX09Pas5A/U+V3pFwrSyoC1svzDy40Q9RU/85yb/7D2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="modal.js"></script>
+    <script src="mask.js"></script>
 </body>
 </html>
