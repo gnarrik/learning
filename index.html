@@ -7,18 +7,18 @@
         <title>ROBO SCHOOL</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <a href="/" class="header-logo logo">Robo.School</a>
             <nav class="header-menu">
                 <ul class="header-menu-list">
                     <li class="header-menu-item">
-                        <a href="/" class="header-menu-link">О школе</a>
+                        <a data-target="#achievments" data-mt-duration="100" class="header-menu-link">О школе</a>
                     </li>
                     <li class="header-menu-item">
-                        <a href="/" class="header-menu-link">Тренеры</a>
+                        <a class="header-menu-link" data-target="#coaches" data-mt-duration="200">Тренеры</a>
                     </li>
                     <li class="header-menu-item">
-                        <a href="/" class="header-menu-link">Стоимость</a>
+                        <a data-target="#price" data-mt-duration="300" class="header-menu-link">Стоимость</a>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
             </section>
             <section class="about">
                 <h2 class="visually-hidden">О школе</h2>
-                <div class="about-school">
+                <div class="about-school" id="achievments">
                     <div class="about-school-text container">
                         <p class="text">
                             <b>Robo School</b>
@@ -49,7 +49,7 @@
                         </p>
                     </div>
                     <div class="about-school-achievements">
-                        <dl class="about-school-achievements-list container">
+                        <dl class="about-school-achievements-list container" >
                             <div class="about-school-achievements-item">
                                 <dt class="about-school-achievements-term">10</dt>
                                 <dd class="about-school-achievements-definition">УМК по различным направлениям по робототехнике</dd>
@@ -99,7 +99,7 @@
             </div>
         </section>
         <section class="coaches">
-            <div class="container">
+            <div class="container" id="coaches">
                 <h2 class="coaches-title">Профессиональные тренеры</h2>
                 <dl class="coaches-list">
                     <div class="coaches-item">
@@ -141,8 +141,8 @@
                 </dl>
             </div>
         </section>
-        <section class="price">
-            <div class="price container">
+        <section class="price" id="price">
+            <div class="price container" >
                 <h2 class="price-title">Выберите нужный пакет</h2>
                 <ul class="price-list">
                     <li class="price-item">
@@ -172,7 +172,7 @@
                 </ul>
             </div>
         </section>
-        <section class="register">
+        <section class="register" id="register">
             <h2 class="visually-hidden">Запись на курс</h2>
             <div class="registration container">
                 <div class="registration-info">
@@ -197,7 +197,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="robo-rights">
-                <a href="/" class="footer-logo logo">Robo.School</a>
+                <a data-target="#header" data-mt-duration="300" class="footer-logo logo">Robo.School</a>
                 <p>&#169 Robo.School</p>
             </div>
             <div class="robo-number">
